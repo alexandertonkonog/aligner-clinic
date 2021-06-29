@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/price.css">
+    <title>Document</title>
+</head>
+<body class="body_bg">
+    <header class="header header_page">
+        <nav class="nav header__nav block">
+            <a href="/" class="header__logo-container">
+                <img src="images/logo.svg" alt="Align Clinic" title="Align Clinic" class="logo header__logo">
+            </a>
+            <ul class="nav__menu header__menu">
+                <li class="nav__link-wrapper nav__link-wrapper_only-full" data-id="company">
+                    <p class="nav__link nav__link_have-child">
+                        о компании
+                        <svg class="nav__link-icon" width="12" height="7" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4.5 4L8 1" stroke="white"/>
+                            <path d="M1 1L4.5 4L8 1" stroke="#54575A" stroke-opacity="0.8"/>
+                        </svg> 
+                    </p>
+                    <ul class="nav__link-dropdown">
+                        <li class="dropdown__link-wrapper">
+                            <a href="" class="dropdown__link">История</a>
+                        </li>
+                        <li class="dropdown__link-wrapper">
+                            <a href="" class="dropdown__link">История</a>
+                        </li>
+                        <li class="dropdown__link-wrapper">
+                            <a href="" class="dropdown__link">История</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__link-wrapper nav__link-wrapper_only-full"><a href="" class="nav__link">услуги</a></li>
+                <li class="nav__link-wrapper nav__link-wrapper_active"><a href="/price.html" class="nav__link">Стоимость</a></li>
+                <li class="nav__link-wrapper">
+                    <a href="" class="nav__link">
+                        <img src="images/fire.svg" class="nav__link-icon" alt="Акции"> Акции
+                    </a>
+                </li>
+                <li class="nav__link-wrapper">
+                    <a href="" class="nav__link">
+                        <img src="images/bear.svg" class="nav__link-icon" alt="invisalign kids">invisalign kids
+                    </a>
+                </li>
+                <li class="nav__link-wrapper nav__link-wrapper_only-full"><a href="" class="nav__link">Отзывы</a></li>
+                <li class="nav__link-wrapper"><a href="" class="nav__link">До-После</a></li>
+                <li class="nav__link-wrapper"><a href="" class="nav__link">филиалы</a></li>
+            </ul>
+            <!-- <button class="btn header__search">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.1266 12.0128L16.5 15.3855L15.3855 16.5L12.0128 13.1266C10.7579 14.1325 9.19706 14.6797 7.58871 14.6774C3.67574 14.6774 0.5 11.5017 0.5 7.58871C0.5 3.67574 3.67574 0.5 7.58871 0.5C11.5017 0.5 14.6774 3.67574 14.6774 7.58871C14.6797 9.19706 14.1325 10.7579 13.1266 12.0128ZM11.5466 11.4284C12.5462 10.4005 13.1044 9.02254 13.1021 7.58871C13.1021 4.54214 10.6345 2.07527 7.58871 2.07527C4.54214 2.07527 2.07527 4.54214 2.07527 7.58871C2.07527 10.6345 4.54214 13.1021 7.58871 13.1021C9.02254 13.1044 10.4005 12.5462 11.4284 11.5466L11.5466 11.4284Z" fill="#333333"/>
+                </svg>
+            </button> -->
+            <a href="tel:89180869337" class="btn nav__phone header__mobile-btn">
+                <svg class="nav__link-btn-img" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9999 15.9201V18.9201C21.0011 19.1986 20.944 19.4743 20.8324 19.7294C20.7209 19.9846 20.5572 20.2137 20.352 20.402C20.1468 20.5902 19.9045 20.7336 19.6407 20.8228C19.3769 20.912 19.0973 20.9452 18.8199 20.9201C15.7428 20.5857 12.7869 19.5342 10.1899 17.8501C7.77376 16.3148 5.72527 14.2663 4.18993 11.8501C2.49991 9.2413 1.44818 6.27109 1.11993 3.1801C1.09494 2.90356 1.12781 2.62486 1.21643 2.36172C1.30506 2.09859 1.4475 1.85679 1.6347 1.65172C1.82189 1.44665 2.04974 1.28281 2.30372 1.17062C2.55771 1.05843 2.83227 1.00036 3.10993 1.0001H6.10993C6.59524 0.995321 7.06572 1.16718 7.43369 1.48363C7.80166 1.80008 8.04201 2.23954 8.10993 2.7201C8.23656 3.68016 8.47138 4.62282 8.80993 5.5301C8.94448 5.88802 8.9736 6.27701 8.89384 6.65098C8.81408 7.02494 8.6288 7.36821 8.35993 7.6401L7.08993 8.9101C8.51349 11.4136 10.5864 13.4865 13.0899 14.9101L14.3599 13.6401C14.6318 13.3712 14.9751 13.1859 15.3491 13.1062C15.723 13.0264 16.112 13.0556 16.4699 13.1901C17.3772 13.5286 18.3199 13.7635 19.2799 13.8901C19.7657 13.9586 20.2093 14.2033 20.5265 14.5776C20.8436 14.9519 21.0121 15.4297 20.9999 15.9201Z" stroke="#009EE0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <button class="btn nav__toggler header__mobile-btn">
+                <img src="images/nav-toggle.svg" alt="menu toggler" class="nav__link_have-child nav__link-btn-img" id="nav__link-toggler" />
+                <ul class="nav__link-dropdown">
+                    <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                        <p class="dropdown__link nav__link_have-child">
+                            о компании
+                            <svg class="nav__link-icon" width="12" height="7" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4.5 4L8 1" stroke="white"/>
+                                <path d="M1 1L4.5 4L8 1" stroke="#54575A" stroke-opacity="0.8"/>
+                            </svg> 
+                        </p>
+                        <ul class="nav__link-dropdown">
+                            <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                                <a href="" class="dropdown__link">История</a>
+                            </li>
+                            <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                                <a href="" class="dropdown__link">История</a>
+                            </li>
+                            <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                                <a href="" class="dropdown__link">История</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                        <a href="" class="dropdown__link">услуги</a>
+                    </li>
+                    <li class="dropdown__link-wrapper">
+                        <a href="" class="dropdown__link">Стоимость</a>
+                    </li>
+                    <li class="dropdown__link-wrapper">
+                        <a href="" class="dropdown__link"><img src="images/fire.svg" class="nav__link-icon" alt="Акции"> Акции</a>
+                    </li>
+                    <li class="dropdown__link-wrapper">
+                        <a href="" class="dropdown__link"><img src="images/bear.svg" class="nav__link-icon" alt="invisalign kids">invisalign kids</a>
+                    </li>
+                    <li class="dropdown__link-wrapper nav__link-wrapper_only-middle">
+                        <a href="" class="dropdown__link">Отзывы</a>
+                    </li>
+                    <li class="dropdown__link-wrapper">
+                        <a href="" class="dropdown__link">До-После</a>
+                    </li>
+                    <li class="dropdown__link-wrapper">
+                        <a href="" class="dropdown__link">филиалы</a>
+                    </li>
+                </ul>
+            </button>
+            <div class="header__right">
+                <div class="city">
+                    <div class="city__title">
+                        <svg class="city__icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.6601 14L6.74001 8.48315H0.5L12.5 2L8.6601 14Z" stroke="#009EE0"/>
+                        </svg>
+                        Краснодар
+                        <svg class="city__title-icon" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4.5 4L8 1" stroke="white"/>
+                            <path d="M1 1L4.5 4L8 1" stroke="#54575A" stroke-opacity="0.8"/>
+                        </svg> 
+                    </div>
+                </div>
+                <button class="btn btn_blue modal-init_btn">Записаться</button>
+            </div>
+        </nav>
+        <div class=""></div>
+    </header>
+    <div class="title-area block">
+        <h1 class="title-second mb-small">Стоимость</h1>
+        <p class="breadcrumbs">
+            <span class="breadcrumbs__item">Главная</span> / 
+            <span class="breadcrumbs__item breadcrumbs__item_active">Стоимость</span> 
+        </p>
+     
+    </div>
+    <main class="main">
+        <section class="block search-container page-grid">
+            <div class="search mb-middle">
+                <input placeholder="Название услуги" type="text" class="search__input input">
+                <svg class="search__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6266 15.5128L20 18.8855L18.8855 20L15.5128 16.6266C14.2579 17.6325 12.6971 18.1797 11.0887 18.1774C7.17574 18.1774 4 15.0017 4 11.0887C4 7.17574 7.17574 4 11.0887 4C15.0017 4 18.1774 7.17574 18.1774 11.0887C18.1797 12.6971 17.6325 14.2579 16.6266 15.5128ZM15.0466 14.9284C16.0462 13.9005 16.6044 12.5225 16.6021 11.0887C16.6021 8.04214 14.1345 5.57527 11.0887 5.57527C8.04214 5.57527 5.57527 8.04214 5.57527 11.0887C5.57527 14.1345 8.04214 16.6021 11.0887 16.6021C12.5225 16.6044 13.9005 16.0462 14.9284 15.0466L15.0466 14.9284Z" fill="white"/>
+                    <path d="M16.6266 15.5128L20 18.8855L18.8855 20L15.5128 16.6266C14.2579 17.6325 12.6971 18.1797 11.0887 18.1774C7.17574 18.1774 4 15.0017 4 11.0887C4 7.17574 7.17574 4 11.0887 4C15.0017 4 18.1774 7.17574 18.1774 11.0887C18.1797 12.6971 17.6325 14.2579 16.6266 15.5128ZM15.0466 14.9284C16.0462 13.9005 16.6044 12.5225 16.6021 11.0887C16.6021 8.04214 14.1345 5.57527 11.0887 5.57527C8.04214 5.57527 5.57527 8.04214 5.57527 11.0887C5.57527 14.1345 8.04214 16.6021 11.0887 16.6021C12.5225 16.6044 13.9005 16.0462 14.9284 15.0466L15.0466 14.9284Z" fill="#54575A" fill-opacity="0.4"/>
+                </svg> 
+            </div>
+        </section>
+        <section class="price-service">
+            <div class="price-service__inside block page-grid">
+                <ul class="price-service__list list-main">
+                    <li class=" list-main__item mb-small">
+                        <div class="price-service__item">   
+                            <p class="price-service__name text-small">Установка системы Invisalign Full/Teen</p>
+                            <p class="price-service__price text-small">110 000 руб.</p>
+                        </div>
+                    </li>
+                    <li class="list-main__item mb-small">
+                        <div class="price-service__item">   
+                            <p class="price-service__name text-small">Установка системы Invisalign Lite</p>
+                            <p class="price-service__price text-small">200 600 руб.</p>
+                        </div>
+                    </li>
+                    <li class="list-main__item mb-small">
+                        <div class="price-service__item">
+                            <p class="price-service__name text-small">Установка системы Invisalign Express</p>
+                            <p class="price-service__price text-small">260 600 руб.</p>
+                        </div>
+                    </li>
+                    <li class="list-main__item mb-small">
+                        <div class="price-service__item">
+                            <p class="price-service__name text-small">Установка системы Invisalign Express</p>
+                            <p class="price-service__price text-small">260 600 руб.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="price-service-des block padding-middle">
+            <h2 class="title-small price-service-des__title">В стоимость входит:</h2>
+            <div class="price-service-des__content page-grid">
+                <ul class="list-main">
+                    <li class="list-main__item mb-small text-small">Выполнение диагностического этапа (включает в себя снятие оттисков, определение конструктивного прикуса, изготовление и расчет контрольно-диагностических моделей, фотографии лица и зубов, изучение рентгеновских снимков (ТРГ и ОПТГ), составление плана лечения в программе ClinCheck)
+                        <button class="btn text-inherit list-main__btn">Подробнее</button>
+                    </li>
+                    <li class="list-main__item mb-small text-small">Элайнеры Инвизилайн (неограниченное количество в течение 5 лет)</li>
+                    <li class="list-main__item mb-small text-small">Фиксация аттачменов и элайнеров</li>
+                    <li class="list-main__item mb-small text-small">Повторные контрольные посещения</li>
+                    <li class="list-main__item mb-small text-small">Изготовление двух ретенционных (закрепляющих) аппаратов (несъемного на нижнюю челюсть и съемного на верхнюю челюсть)</li>
+                </ul>
+            </div>
+        </section>
+        <section class="price-credit block grid">
+            <div class="price-credit__des padding-average">
+                <h2 class="title-second mb-main">Рассрочка</h2>
+                <p class="text-small text-grey mb-middle">Рассрочка дается сроком от 6 до 24 месяцев: программы «0-0-6», «0-0-10», «0-0-12», «0-0-24».</p>
+                <p class="text-small text-grey mb-main"> Обратите внимание: оформить в рассрочку можно не все товары, используйте фильтр «Рассрочка» в каталоге, чтобы уточнить, какие товары участвуют.</p>    
+                <a href="" class="btn btn_blue">Узнать подробнее</a>
+            </div>
+            <img src="images/align-price.png" class="price-credit__img" alt="Align рассрочка">
+        </section>
+        <section class="block price-price page-grid padding-main">
+            <ul class="price-price__content">
+                <li class="drop__slide">
+                    <div class="drop__slide-header">
+                        <div class="title-small">Консультация</div>
+                        <div class="drop__slide-handle"></div>
+                    </div>
+                    <div class="drop__slide-content text-small">
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop__slide">
+                    <div class="drop__slide-header">
+                        <div class="title-small">Рентгенография</div>
+                        <div class="drop__slide-handle"></div>
+                    </div>
+                    <div class="drop__slide-content text-small">
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop__slide">
+                    <div class="drop__slide-header">
+                        <div class="title-small">Установка элайнеров</div>
+                        <div class="drop__slide-handle"></div>
+                    </div>
+                    <div class="drop__slide-content text-small">
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop__slide">
+                    <div class="drop__slide-header">
+                        <div class="title-small">Реставрация</div>
+                        <div class="drop__slide-handle"></div>
+                    </div>
+                    <div class="drop__slide-content text-small">
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                        <div class="price-price__item grid">
+                            <p class="text-small text-grey price-price__item-number">А16.07.070.002</p>
+                            <p class="text-small price-price__item-name">Установка системы Invisalign Full/Teen</p>
+                            <p class="text-small price-price__item-price">110 000 руб.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer block">
+        <div class="footer__top">
+            <div class="footer__top-left grid">
+                <a href="/" class="logo-container">
+                    <img src="images/logo.svg" alt="Align Clinic" title="Align Clinic" class="logo">
+                </a>
+                <div class="city">
+                    <div class="city__title">
+                        <svg class="city__icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.6601 14L6.74001 8.48315H0.5L12.5 2L8.6601 14Z" stroke="#009EE0"/>
+                        </svg>
+                        Краснодар
+                        <svg class="city__title-icon" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4.5 4L8 1" stroke="white"/>
+                            <path d="M1 1L4.5 4L8 1" stroke="#54575A" stroke-opacity="0.8"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top-right grid">
+                <div class="footer__top-col">
+                    <p class="footer__top-title text-grey">Адрес электронной почты</p>
+                    <a href="mailto:rossdent_pr@mail.ru" class="footer__top-contact">rossdent_pr@mail.ru</a>
+                </div>
+                <div class="footer__top-col">
+                    <p class="footer__top-title text-grey">Контактный телефон</p>
+                    <a href="tel:8(861)211-61-86" class="footer__top-contact">8 (861) 211-61-86</a>
+                </div>
+                <button class="btn btn_blue">Записаться</button>
+            </div>
+        </div>
+        <nav class="footer-menu">
+            <a href="" class="footer-menu__link">История</a>
+            <a href="" class="footer-menu__link">Миссия</a>
+            <a href="" class="footer-menu__link">Врачи</a>
+            <a href="" class="footer-menu__link">Новости</a>
+            <a href="" class="footer-menu__link">Блог</a>
+            <a href="" class="footer-menu__link">Видео-тур</a>
+            <a href="" class="footer-menu__link">Фотогалерея</a>
+            <a href="" class="footer-menu__link">Юридическая информация</a>
+            <a href="" class="footer-menu__link">До-После</a>
+            <a href="" class="footer-menu__link">Филиалы</a>
+            <a href="" class="footer-menu__link">Видео-тур</a>
+            <a href="" class="footer-menu__link">Фотогалерея</a>
+            <a href="" class="footer-menu__link">Филиалы</a>
+            <a href="" class="footer-menu__link">Стоимость</a>
+            <a href="" class="footer-menu__link">Услуги</a>
+            <a href="" class="footer-menu__link">Акции</a>
+            <a href="" class="footer-menu__link">Invisalign kids</a>
+            <a href="" class="footer-menu__link">Отзывы</a>
+            <a href="" class="footer-menu__link">Новый пункт</a>
+        </nav>
+        <div class="footer__des">
+            <div class="footer__des-left grid">
+                <p class="text-grey text-card">Использование материалов без разрешения владельцев не допускается.</p>
+                <p class="text-grey text-card">Ценовые предложения на данном сайте не являются публичной офертой.</p>
+            </div>
+            <div class="footer__social">
+                <a href class="footer__social-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.3939 15.9342C22.3698 15.8839 22.3471 15.8422 22.3261 15.8087C21.9791 15.2063 21.316 14.4668 20.3372 13.5901L20.3166 13.57L20.3062 13.5602L20.2957 13.5501H20.2852C19.841 13.1419 19.5597 12.8674 19.4419 12.7269C19.2264 12.4592 19.178 12.1882 19.2959 11.9136C19.3791 11.7062 19.6917 11.2681 20.233 10.5988C20.5177 10.244 20.7432 9.95976 20.9099 9.74556C22.1109 8.20629 22.6316 7.22269 22.4719 6.79434L22.4099 6.69424C22.3681 6.63398 22.2605 6.57885 22.0872 6.52857C21.9135 6.4784 21.6914 6.4701 21.4205 6.50354L18.4216 6.52351C18.3731 6.50691 18.3038 6.50846 18.2134 6.52857C18.123 6.54868 18.0779 6.55877 18.0779 6.55877L18.0258 6.58391L17.9842 6.61411C17.9495 6.63408 17.9114 6.66921 17.8696 6.71941C17.8282 6.76945 17.7935 6.82816 17.7657 6.89507C17.4392 7.70482 17.0681 8.45768 16.6515 9.15363C16.3946 9.56861 16.1586 9.92825 15.9432 10.2328C15.7281 10.5372 15.5476 10.7614 15.4019 10.9052C15.256 11.0491 15.1244 11.1644 15.0061 11.2515C14.8881 11.3386 14.7979 11.3754 14.7355 11.362C14.673 11.3485 14.6141 11.3351 14.5583 11.3218C14.4612 11.2615 14.383 11.1796 14.3242 11.0758C14.265 10.9721 14.2252 10.8416 14.2043 10.6843C14.1836 10.5269 14.1714 10.3916 14.1679 10.2778C14.1646 10.1641 14.1661 10.0033 14.1732 9.79588C14.1804 9.58833 14.1836 9.4479 14.1836 9.37429C14.1836 9.11994 14.1888 8.8439 14.1991 8.54611C14.2096 8.24831 14.2181 8.01235 14.2252 7.83853C14.2323 7.66453 14.2355 7.48043 14.2355 7.28635C14.2355 7.09228 14.2233 6.94007 14.1991 6.8296C14.1752 6.71927 14.1384 6.61218 14.09 6.50835C14.0413 6.40463 13.9701 6.3244 13.8766 6.26744C13.7829 6.21055 13.6664 6.16541 13.5277 6.13187C13.1598 6.0516 12.6912 6.00818 12.1218 6.00143C10.8307 5.98807 10.001 6.06844 9.6331 6.24244C9.48731 6.31596 9.3554 6.41641 9.23745 6.54348C9.11245 6.69076 9.09502 6.77113 9.18525 6.78435C9.60184 6.84451 9.89676 6.98842 10.0703 7.21593L10.1329 7.33649C10.1815 7.42347 10.2301 7.57747 10.2787 7.79827C10.3273 8.01907 10.3586 8.26332 10.3724 8.53088C10.407 9.01949 10.407 9.43774 10.3724 9.78567C10.3376 10.1338 10.3048 10.4047 10.2735 10.5988C10.2421 10.7929 10.1953 10.9501 10.1329 11.0706C10.0703 11.191 10.0287 11.2646 10.0078 11.2914C9.98702 11.3181 9.96966 11.3349 9.95588 11.3415C9.86565 11.3749 9.7718 11.3919 9.67467 11.3919C9.5774 11.3919 9.45945 11.3449 9.32064 11.2512C9.18186 11.1575 9.03782 11.0287 8.88855 10.8647C8.73926 10.7007 8.57091 10.4715 8.38341 10.1771C8.19605 9.88268 8.00165 9.53472 7.80033 9.13319L7.63375 8.84201C7.52962 8.65468 7.38737 8.38192 7.20687 8.02396C7.02626 7.66586 6.86663 7.31947 6.72785 6.98487C6.67238 6.84433 6.58904 6.73734 6.47797 6.66372L6.42586 6.63352C6.39121 6.6068 6.33559 6.57843 6.25929 6.54819C6.18288 6.51799 6.10315 6.49633 6.01977 6.483L3.16657 6.50297C2.87501 6.50297 2.67718 6.56665 2.57302 6.69382L2.53133 6.75397C2.5105 6.78748 2.5 6.84099 2.5 6.91465C2.5 6.98828 2.52083 7.07863 2.56251 7.18562C2.97903 8.12929 3.43198 9.03939 3.92136 9.91605C4.41075 10.7927 4.83602 11.4989 5.19691 12.0339C5.55789 12.5694 5.92583 13.0747 6.30072 13.5497C6.67562 14.0249 6.92377 14.3294 7.0452 14.4632C7.16676 14.5972 7.26224 14.6974 7.33165 14.7643L7.59202 15.0052C7.75864 15.1658 8.00329 15.3582 8.32611 15.5824C8.649 15.8066 9.00646 16.0275 9.39869 16.2451C9.79099 16.4624 10.2474 16.6398 10.7681 16.7769C11.2887 16.9142 11.7955 16.9693 12.2884 16.9428H13.4859C13.7288 16.9225 13.9128 16.8489 14.0379 16.7218L14.0793 16.6715C14.1072 16.6316 14.1333 16.5695 14.1573 16.486C14.1817 16.4024 14.1938 16.3102 14.1938 16.21C14.1867 15.9223 14.2094 15.663 14.2613 15.4321C14.3132 15.2014 14.3724 15.0273 14.4386 14.9102C14.5047 14.7931 14.5793 14.6943 14.6624 14.6142C14.7456 14.5339 14.8049 14.4853 14.8397 14.4686C14.8743 14.4517 14.9019 14.4403 14.9227 14.4334C15.0892 14.3799 15.2854 14.4318 15.5113 14.5892C15.7369 14.7464 15.9485 14.9406 16.1465 15.1714C16.3444 15.4024 16.5821 15.6615 16.8597 15.9493C17.1375 16.2371 17.3804 16.451 17.5886 16.5918L17.7968 16.7122C17.9359 16.7926 18.1164 16.8662 18.3385 16.9331C18.5602 17 18.7546 17.0167 18.9215 16.9833L21.5871 16.9432C21.8509 16.9432 22.056 16.9011 22.2015 16.8176C22.3474 16.734 22.434 16.6418 22.4619 16.5416C22.4897 16.4412 22.4912 16.3274 22.4671 16.2001C22.4425 16.0732 22.4181 15.9844 22.3939 15.9342Z" fill="#45668E"/>
+                    </svg>                        
+                </a>
+                <a href class="footer__social-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9362 2.00412L14.5843 2C11.9421 2 10.2345 3.91444 10.2345 6.87752V9.12639H7.86981C7.66547 9.12639 7.5 9.30743 7.5 9.53073V12.7891C7.5 13.0124 7.66566 13.1932 7.86981 13.1932H10.2345V21.415C10.2345 21.6384 10.4 21.8191 10.6043 21.8191H13.6896C13.894 21.8191 14.0594 21.6381 14.0594 21.415V13.1932H16.8243C17.0287 13.1932 17.1942 13.0124 17.1942 12.7891L17.1953 9.53073C17.1953 9.4235 17.1562 9.32083 17.087 9.24495C17.0177 9.16908 16.9234 9.12639 16.8253 9.12639H14.0594V7.22C14.0594 6.30371 14.2592 5.83856 15.3515 5.83856L16.9359 5.83794C17.14 5.83794 17.3055 5.65691 17.3055 5.43381V2.40825C17.3055 2.18536 17.1402 2.00454 16.9362 2.00412Z" fill="#3B5998"/>
+                    </svg>                        
+                </a>
+                <a href class="footer__social-link">
+                    <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3724 19H32.6275C35.3143 19 37.5 21.1857 37.5 23.8724V32.1277C37.5 34.8143 35.3143 37 32.6277 37H24.3724C21.6857 37 19.5 34.8143 19.5 32.1277V23.8724C19.5 21.1857 21.6857 19 24.3724 19ZM23.5783 28C23.5783 30.7139 25.7861 32.9217 28.5 32.9217C31.2139 32.9217 33.4217 30.7139 33.4217 28C33.4217 25.2861 31.2139 23.0783 28.5 23.0783C25.7861 23.0783 23.5783 25.2861 23.5783 28ZM32.0851 22.7847C32.0851 23.5867 32.7375 24.239 33.5395 24.239C34.3414 24.239 34.9939 23.5867 34.9939 22.7847C34.9939 21.9827 34.3414 21.3302 33.5395 21.3302C32.7375 21.3302 32.0851 21.9827 32.0851 22.7847ZM26.25 28C26.25 26.7593 27.2594 25.75 28.5 25.75C29.7407 25.75 30.75 26.7593 30.75 28C30.75 29.2406 29.7407 30.25 28.5 30.25C27.2594 30.25 26.25 29.2406 26.25 28Z" fill="#E1306C"/>
+                    </svg>                        
+                </a>
+                <a href class="footer__social-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4993 5C12.4976 5 12.4958 5 12.4939 5C11.8904 5.00426 6.55536 5.05454 5.04382 5.47682C3.98746 5.77016 3.15357 6.63065 2.86884 7.72205C2.47334 9.25591 2.49851 12.2091 2.50126 12.4449C2.49866 12.6796 2.47318 15.6571 2.86762 17.2036C2.86808 17.205 2.86838 17.2066 2.86884 17.208C3.15037 18.287 4.00303 19.1741 5.04124 19.4682C5.04383 19.469 5.04658 19.4696 5.04918 19.4705C6.54361 19.8761 11.8892 19.9259 12.4939 19.9301H12.5048C13.1098 19.9259 18.459 19.8755 19.9567 19.4526C21.0104 19.1601 21.8436 18.3007 22.1291 17.2107C22.5394 15.6631 22.5014 12.6791 22.4972 12.4272C22.5001 12.1791 22.5241 9.25245 22.1309 7.71086C22.1306 7.70929 22.1301 7.70786 22.1299 7.70645C21.845 6.61504 21.0112 5.75456 19.9536 5.4609C19.9522 5.46043 19.9508 5.46011 19.9494 5.45964C18.4551 5.05407 13.1093 5.00441 12.5048 5C12.5029 5 12.5011 5 12.4993 5ZM4.37794 16.7897C4.03065 15.4246 4.06345 12.4851 4.06376 12.4554V12.4341C4.05339 11.6189 4.08985 9.25796 4.37809 8.13976C4.51786 7.6043 4.92909 7.18013 5.45063 7.03528C6.5659 6.72365 10.9111 6.6256 12.4993 6.6141C14.0915 6.6256 18.4431 6.72096 19.5502 7.02014C20.0701 7.16548 20.4799 7.58823 20.6206 8.12431C20.9091 9.25891 20.9454 11.6083 20.9347 12.4184C20.9347 12.4269 20.9347 12.4354 20.935 12.4439C20.9492 13.2689 20.921 15.6574 20.622 16.7846C20.6216 16.7857 20.6214 16.7868 20.6213 16.7879C20.4809 17.3258 20.0695 17.75 19.5479 17.8947C18.4435 18.2067 14.0912 18.3045 12.4993 18.316C10.9081 18.3045 6.5607 18.2092 5.45033 17.9104C4.9387 17.7639 4.51816 17.3245 4.37794 16.7897ZM10.5078 9.19665V15.7336L15.9766 12.465L10.5078 9.19665Z" fill="#FF0000"/>
+                    </svg>                         
+                </a>
+                <a href class="footer__social-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.9228 10.4184V9.68432C10.6707 9.64398 10.4161 9.62187 10.1609 9.61818C7.6903 9.61285 5.50303 11.2312 4.76111 13.6132C4.01919 15.9952 4.89494 18.5883 6.92284 20.0145C6.1792 19.2101 5.68181 18.2052 5.49071 17.1213C5.2996 16.0374 5.42294 14.9207 5.84584 13.9061C6.26875 12.8915 6.97313 12.0223 7.87398 11.4034C8.77483 10.7845 9.83364 10.4424 10.9226 10.4184L10.9228 10.4184Z" fill="#25F4EE"/>
+                        <path d="M11.0598 18.7329C12.4412 18.731 13.5766 17.631 13.6371 16.2361V3.78818H15.8868C15.8409 3.52807 15.819 3.26421 15.8214 3L12.7442 3V15.4359C12.693 16.8379 11.5549 17.9484 10.1669 17.9507C9.75218 17.9471 9.34419 17.844 8.97656 17.6499C9.21483 17.9836 9.52774 18.2556 9.88977 18.4438C10.2518 18.632 10.6527 18.7311 11.0598 18.7329ZM20.0889 8.01161V7.31973C19.261 7.32006 18.4513 7.07309 17.7617 6.60985C18.3662 7.32022 19.1832 7.81228 20.0889 8.01161Z" fill="#25F4EE"/>
+                        <path d="M17.7616 6.60998C17.0823 5.82806 16.7078 4.82288 16.7081 3.78223H15.8867C15.9928 4.35759 16.2137 4.90507 16.5361 5.39124C16.8584 5.87742 17.2754 6.2921 17.7616 6.60998ZM10.1609 12.7286C9.58473 12.7316 9.02613 12.9292 8.57385 13.2899C8.12158 13.6506 7.80158 14.1538 7.66474 14.7195C7.5279 15.2852 7.58208 15.8809 7.81865 16.4119C8.05523 16.9429 8.46062 17.3787 8.97038 17.65C8.69167 17.261 8.52477 16.8018 8.48811 16.3229C8.45145 15.844 8.54647 15.3643 8.76266 14.9366C8.97885 14.5089 9.3078 14.1499 9.71316 13.8994C10.1185 13.6488 10.5845 13.5164 11.0597 13.5167C11.318 13.5201 11.5745 13.5608 11.8215 13.6374V10.4725C11.5693 10.4343 11.3147 10.4142 11.0597 10.4123H10.9227V12.8188C10.6744 12.7515 10.4178 12.7211 10.1609 12.7286Z" fill="#FE2C55"/>
+                        <path d="M20.0889 8.01074V10.4173C18.5561 10.4143 17.0631 9.92389 15.8213 9.0155V15.3388C15.8147 18.494 13.2824 21.0483 10.1609 21.0483C9.00163 21.0505 7.87025 20.6889 6.92285 20.0135C7.69539 20.8534 8.70027 21.4387 9.80658 21.6931C10.9129 21.9476 12.0694 21.8593 13.1254 21.4399C14.1813 21.0205 15.0879 20.2894 15.727 19.3418C16.366 18.3941 16.7079 17.2739 16.7082 16.1271V9.82175C17.9541 10.7242 19.449 11.2082 20.9817 11.2055V8.10679C20.6817 8.10588 20.3825 8.0737 20.0889 8.01074Z" fill="#FE2C55"/>
+                        <path d="M15.8211 15.3397V9.01649C17.0666 9.91971 18.5617 10.4038 20.0946 10.4003V7.99375C19.189 7.80043 18.3702 7.31477 17.7615 6.60998C17.2753 6.2921 16.8583 5.87742 16.5359 5.39124C16.2136 4.90507 15.9926 4.35759 15.8865 3.78223H13.6368V16.2364C13.6149 16.7785 13.4264 17.3002 13.0977 17.7291C12.7689 18.158 12.3161 18.4727 11.8023 18.6295C11.2884 18.7863 10.739 18.7774 10.2304 18.604C9.72179 18.4307 9.27922 18.1015 8.96421 17.6622C8.45436 17.3909 8.04888 16.9551 7.81224 16.4241C7.57561 15.893 7.5214 15.2973 7.65825 14.7315C7.7951 14.1658 8.11514 13.6625 8.56748 13.3018C9.01983 12.941 9.57851 12.7435 10.1547 12.7406C10.4131 12.743 10.6698 12.7835 10.9165 12.861V10.4544C9.82173 10.4732 8.75597 10.8135 7.84921 11.434C6.94245 12.0544 6.23386 12.9281 5.80985 13.9486C5.38585 14.969 5.26473 16.0921 5.46128 17.181C5.65783 18.2698 6.16354 19.2773 6.91677 20.0806C7.87347 20.7337 9.00646 21.0721 10.1607 21.0493C13.2822 21.0493 15.8145 18.4949 15.8211 15.3397Z" fill="black"/>
+                    </svg>                         
+                </a>
+                <a href class="footer__social-link">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.951 6.47142C18.1716 5.68483 17.2435 5.06121 16.2207 4.63692C15.1979 4.21262 14.1009 3.99613 12.9936 4.00005C8.35368 4.00005 4.57225 7.78042 4.568 12.4214C4.568 13.9078 4.95687 15.3539 5.69106 16.6342L4.5 21L8.96674 19.8291C10.2024 20.5016 11.5868 20.8541 12.9936 20.8544H12.9978C17.6388 20.8544 21.4192 17.0741 21.4234 12.4288C21.4245 11.3218 21.2065 10.2254 20.782 9.20297C20.3575 8.18052 19.7348 7.25218 18.95 6.47142H18.951ZM12.9936 19.4286C11.7388 19.429 10.507 19.0913 9.42786 18.4511L9.17286 18.2981L6.52299 18.9929L7.23062 16.4079L7.06487 16.1412C6.36341 15.0259 5.99243 13.7347 5.99493 12.4172C5.99493 8.56454 9.13674 5.42167 12.9978 5.42167C13.9177 5.42002 14.8288 5.60046 15.6786 5.95259C16.5283 6.30472 17.3 6.82158 17.9491 7.47335C18.6004 8.12259 19.1168 8.89436 19.4684 9.74415C19.82 10.5939 19.9998 11.5049 19.9976 12.4246C19.9933 16.291 16.8515 19.4286 12.9936 19.4286ZM16.8345 14.1862C16.6252 14.081 15.5914 13.5721 15.397 13.4998C15.2036 13.4308 15.0623 13.3946 14.9242 13.605C14.7828 13.8143 14.3791 14.2914 14.258 14.4285C14.1368 14.5698 14.0115 14.5857 13.8011 14.4816C13.5918 14.3753 12.9128 14.1543 12.1096 13.435C11.4827 12.8772 11.063 12.1866 10.9377 11.9773C10.8165 11.7669 10.926 11.6543 11.0312 11.5491C11.1236 11.4556 11.2405 11.3026 11.3457 11.1815C11.4519 11.0603 11.487 10.9711 11.556 10.8308C11.6251 10.6885 11.5922 10.5673 11.5401 10.4622C11.487 10.357 11.0673 9.31891 10.8899 8.90029C10.7199 8.48698 10.5467 8.54435 10.417 8.53904C10.2959 8.5316 10.1546 8.5316 10.0133 8.5316C9.90658 8.53425 9.80157 8.55893 9.70485 8.6041C9.60812 8.64926 9.52178 8.71392 9.45123 8.79404C9.25786 9.00441 8.71705 9.51335 8.71705 10.5514C8.71705 11.5895 9.47142 12.5872 9.57767 12.7285C9.6818 12.8698 11.0588 14.9937 13.1721 15.9075C13.6715 16.1253 14.0646 16.2538 14.3717 16.3516C14.8763 16.5131 15.3322 16.4886 15.6955 16.4366C16.0993 16.375 16.9397 15.9266 17.1171 15.4346C17.2914 14.9416 17.2914 14.5209 17.2383 14.4327C17.1862 14.3435 17.0449 14.2914 16.8345 14.1862Z" fill="#25D366"/>
+                    </svg>                       
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="/" class="text-grey text-card">Политика конфеденциальности</a>
+            <p class="text-grey text-card">© 2021  РУССДЕНТ, Все права защищены.</p>
+            <a href="https://asteq.ru/" class="text-grey text-card footer__bottom-link">Дизайн <img src="images/asteq.svg" class="footer__bottom-img" alt="ASTEQ"></a>
+            <a href="https://itprotection.ru/" class="text-grey text-card footer__bottom-link">Разработка <img class="footer__bottom-img" src="images/itpro.png" alt="it protection"></a>
+        </div>
+    </footer>
+    <div class="modal modal_hidden">
+        <div class="modal__body">
+            <h2 class="title-second modal__title">Записаться на прием</h2>
+            <input type="text" placeholder="Как к вам обращаться *" class="input mb-main">
+            <input type="text" placeholder="Номер телефона *" class="input mb-main">
+            <input type="text" placeholder="Город" class="input mb-main">
+            <p class="text-card text-grey mb-small modal__privacy">
+                <label for="privacy" class="label checkbox modal__checkbox">
+                    <input id="privacy" name="privacy" type="checkbox" class="checkbox_hidden">
+                </label>
+                Я согласен с политикой обработки персональных данных
+            </p>
+            <button class="btn btn_blue modal__btn">Отправить</button>
+            <div class="modal__exit">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.72462 7.45871L14.7996 1.38371C14.9361 1.2243 15.0075 1.01923 14.9994 0.809503C14.9913 0.599773 14.9043 0.400823 14.7559 0.252411C14.6075 0.103999 14.4086 0.0170552 14.1988 0.00895422C13.9891 0.000853255 13.784 0.072192 13.6246 0.208714L7.54962 6.28371L1.47462 0.20038C1.3152 0.0638585 1.11014 -0.00747947 0.900409 0.000621488C0.690679 0.00872245 0.49173 0.0956657 0.343317 0.244078C0.194905 0.39249 0.107961 0.591439 0.0998603 0.801169C0.0917594 1.0109 0.163098 1.21596 0.29962 1.37538L6.37462 7.45871L0.291287 13.5337C0.204052 13.6084 0.133202 13.7004 0.0831822 13.8037C0.0331627 13.9071 0.00505389 14.0197 0.000620983 14.1345C-0.00381193 14.2493 0.0155264 14.3637 0.0574218 14.4706C0.0993173 14.5776 0.162866 14.6747 0.244078 14.7559C0.32529 14.8371 0.422413 14.9007 0.529351 14.9426C0.636288 14.9845 0.750732 15.0038 0.865498 14.9994C0.980264 14.9949 1.09287 14.9668 1.19626 14.9168C1.29965 14.8668 1.39158 14.7959 1.46629 14.7087L7.54962 8.63371L13.6246 14.7087C13.784 14.8452 13.9891 14.9166 14.1988 14.9085C14.4086 14.9004 14.6075 14.8134 14.7559 14.665C14.9043 14.5166 14.9913 14.3177 14.9994 14.1079C15.0075 13.8982 14.9361 13.6931 14.7996 13.5337L8.72462 7.45871Z" fill="white"/>
+                    <path d="M8.72462 7.45871L14.7996 1.38371C14.9361 1.2243 15.0075 1.01923 14.9994 0.809503C14.9913 0.599773 14.9043 0.400823 14.7559 0.252411C14.6075 0.103999 14.4086 0.0170552 14.1988 0.00895422C13.9891 0.000853255 13.784 0.072192 13.6246 0.208714L7.54962 6.28371L1.47462 0.20038C1.3152 0.0638585 1.11014 -0.00747947 0.900409 0.000621488C0.690679 0.00872245 0.49173 0.0956657 0.343317 0.244078C0.194905 0.39249 0.107961 0.591439 0.0998603 0.801169C0.0917594 1.0109 0.163098 1.21596 0.29962 1.37538L6.37462 7.45871L0.291287 13.5337C0.204052 13.6084 0.133202 13.7004 0.0831822 13.8037C0.0331627 13.9071 0.00505389 14.0197 0.000620983 14.1345C-0.00381193 14.2493 0.0155264 14.3637 0.0574218 14.4706C0.0993173 14.5776 0.162866 14.6747 0.244078 14.7559C0.32529 14.8371 0.422413 14.9007 0.529351 14.9426C0.636288 14.9845 0.750732 15.0038 0.865498 14.9994C0.980264 14.9949 1.09287 14.9668 1.19626 14.9168C1.29965 14.8668 1.39158 14.7959 1.46629 14.7087L7.54962 8.63371L13.6246 14.7087C13.784 14.8452 13.9891 14.9166 14.1988 14.9085C14.4086 14.9004 14.6075 14.8134 14.7559 14.665C14.9043 14.5166 14.9913 14.3177 14.9994 14.1079C15.0075 13.8982 14.9361 13.6931 14.7996 13.5337L8.72462 7.45871Z" fill="#54575A" fill-opacity="0.4"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/twentytwenty/js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/twentytwenty/js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/price.js"></script>
+</body>
+</html>

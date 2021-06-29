@@ -1,0 +1,46 @@
+.quepage {
+    column-gap: 150px;
+}
+.quepage-list .que__list {
+    padding-right: 0;
+}
+.quepage .tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.quepage .tag {
+    color: #333333;
+}
+.quepage .tag_active {
+    background-color:#009EE012;
+    color: #009EE0;
+    border: 1px solid #009EE0;
+}
+
+@media screen and (max-width: 1440px) {
+    .quepage {
+        column-gap: 72px;
+        grid-template-columns: 11fr 1fr;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .quepage {
+        grid-template-columns: 1fr;
+    }
+    .quepage .aside {
+        grid-row: 1/1;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .quepage__content {
+        grid-row: 2/3;
+    }
+    .quepage .tags {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow: auto;
+    }
+}

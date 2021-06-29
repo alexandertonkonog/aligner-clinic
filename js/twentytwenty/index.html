@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эффект "до-после" для сайта с помощью JS | Демонстрация для сайта s-sd.ru</title>
+  <link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+         <link rel="stylesheet" href="demo2.css?v=2">
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+	
+	<br><center><a href="http://www.s-sd.ru"><img src="/files/logo.png" alt=""/></a></center>
+<br>
+                
+	
+    <div class="row">
+     
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/1_1.jpg" />
+          <img src="img/1_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});  
+    });
+    </script>
+  </body>
+</html>
